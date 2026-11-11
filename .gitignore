@@ -1,0 +1,19 @@
+# Files Git should ignore (never save to the repo)
+
+# Operating system junk
+.DS_Store
+Thumbs.db
+
+# Editor settings that are personal to each person
+.vscode/
+.idea/
+
+# Vercel's local folder (created if anyone runs Vercel tools locally)
+.vercel/
+
+# Secrets — never commit these
+.env
+.env.*
+
+# Logs
+*.log
