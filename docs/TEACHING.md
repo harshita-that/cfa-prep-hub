@@ -4,7 +4,7 @@
 >
 > **How to use it:** each session has a goal, an analogy, what to **SAY**, what **HE TYPES** (he types, you don't — muscle memory matters), exact commands, timing, and common errors.
 >
-> Repo: `https://github.com/MY-USERNAME/cfa-prep-hub`
+> Repo: `https://github.com/harshita-that/cfa-prep-hub`
 
 ---
 
@@ -94,7 +94,7 @@ Idea → Requirements → Architecture → Roadmap → Plan → Issues → Branc
 |---|---|---|
 | 10 min | "Let's check Git is installed. Open VS Code → menu **Terminal → New Terminal**." | `git --version` → should print e.g. `git version 2.4x` |
 | 5 min | "Git needs to know who you are, so your save points have your name on them. One-time setup." | `git config --global user.name "Aayush ..."`<br>`git config --global user.email "his-github-email@example.com"` |
-| 10 min | "Now we download the project. First go to a folder where you keep projects." | `cd Documents`<br>`git clone https://github.com/MY-USERNAME/cfa-prep-hub.git`<br>`cd cfa-prep-hub`<br>`code .` (opens VS Code in that folder; if it doesn't work, use **File → Open Folder**) |
+| 10 min | "Now we download the project. First go to a folder where you keep projects." | `cd Documents`<br>`git clone https://github.com/harshita-that/cfa-prep-hub.git`<br>`cd cfa-prep-hub`<br>`code .` (opens VS Code in that folder; if it doesn't work, use **File → Open Folder**) |
 | 10 min | "Install the Live Server extension: click the squares icon on the left (Extensions), search **Live Server** by Ritwick Dey, click Install." | Installs it |
 | 5 min | "Right-click `public/index.html` → **Open with Live Server**." | Browser opens the site |
 | 15 min | Tour the structure in the Explorer sidebar. "Each HTML file is a page. CSS = how it looks. JS = how it behaves. `flashcards.js` is just a list — open it." | Opens files, clicks around site pages |
