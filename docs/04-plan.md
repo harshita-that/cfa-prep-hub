@@ -23,29 +23,29 @@ Built in the initial commits of this repo.
 
 ---
 
-## Phase 2 — Content and polish (milestone: "Phase 2: Content and polish")
+## Phase 2 — Content and polish (milestone: [Phase 2: Content and polish](https://github.com/harshita-that/cfa-prep-hub/milestone/2))
 
 | # | Task | Issue | Labels |
 |---|---|---|---|
-| 1 | Change the site title and add your name in the footer | #TBD | good first issue, frontend |
-| 2 | Add 5 new flashcards | #TBD | good first issue, content |
-| 3 | Add 3 new quiz questions | #TBD | good first issue, content |
-| 4 | Change the colour theme | #TBD | good first issue, frontend |
-| 5 | Answer the "Open questions" in `docs/00-idea.md` | #TBD | good first issue, docs |
-| 6 | Add a "Formula Sheet" page | #TBD | good first issue, frontend, content |
-| 7 | Add a dark mode toggle | #TBD | frontend, stretch |
-| 8 | Draft the Phase 3 breakdown in this file | #TBD | docs |
+| 1 | Change the site title and add your name in the footer | [#1](https://github.com/harshita-that/cfa-prep-hub/issues/1) | good first issue, frontend |
+| 2 | Add 5 new flashcards | [#2](https://github.com/harshita-that/cfa-prep-hub/issues/2) | good first issue, content |
+| 3 | Add 3 new quiz questions | [#3](https://github.com/harshita-that/cfa-prep-hub/issues/3) | good first issue, content |
+| 4 | Change the colour theme | [#4](https://github.com/harshita-that/cfa-prep-hub/issues/4) | good first issue, frontend |
+| 5 | Answer the "Open questions" in `docs/00-idea.md` | [#5](https://github.com/harshita-that/cfa-prep-hub/issues/5) | good first issue, docs |
+| 6 | Add a "Formula Sheet" page | [#6](https://github.com/harshita-that/cfa-prep-hub/issues/6) | good first issue, frontend, content |
+| 7 | Add a dark mode toggle | [#7](https://github.com/harshita-that/cfa-prep-hub/issues/7) | frontend, stretch |
+| 8 | Draft the Phase 3 breakdown in this file | [#8](https://github.com/harshita-that/cfa-prep-hub/issues/8) | docs |
 
 Checklist:
 
-- [ ] Site title + name in footer
-- [ ] 5 new flashcards
-- [ ] 3 new quiz questions
-- [ ] New colour theme
-- [ ] Open questions answered
-- [ ] Formula Sheet page
-- [ ] Dark mode toggle (stretch)
-- [ ] Phase 3 breakdown drafted
+- [ ] #1 Site title + name in footer
+- [ ] #2 5 new flashcards
+- [ ] #3 3 new quiz questions
+- [ ] #4 New colour theme
+- [ ] #5 Open questions answered
+- [ ] #6 Formula Sheet page
+- [ ] #7 Dark mode toggle (stretch)
+- [ ] #8 Phase 3 breakdown drafted
 
 ---
 
