@@ -1,0 +1,239 @@
+/* =========================================================
+   CFA Prep Hub — one stylesheet for the whole site
+   Sections:
+     1. Colour palette and basics (variables)
+     2. Page layout
+     3. Navigation bar
+     4. Buttons
+     5. Home page
+     6. Footer
+     (page-specific sections are added below these)
+   ========================================================= */
+
+
+/* ---------- 1. Colour palette and basics ----------
+   Change these variables to re-theme the whole site. */
+:root {
+  --color-navy: #0b2545;        /* main brand colour (headers, nav) */
+  --color-navy-light: #13315c;
+  --color-accent: #13836f;      /* "money green" for buttons, progress */
+  --color-accent-dark: #0e6656;
+  --color-gold: #c9a227;        /* highlight colour */
+  --color-bg: #f4f6f9;          /* page background */
+  --color-surface: #ffffff;     /* cards and panels */
+  --color-text: #1d2733;
+  --color-muted: #5d6b7a;
+  --color-border: #dde3ea;
+  --color-correct: #1f9d55;
+  --color-correct-bg: #e6f6ec;
+  --color-wrong: #c53030;
+  --color-wrong-bg: #fdecec;
+
+  --radius: 12px;
+  --shadow: 0 2px 10px rgba(11, 37, 69, 0.08);
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* Make sizing predictable: padding is included inside widths */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: var(--color-navy);
+  line-height: 1.25;
+}
+
+a {
+  color: var(--color-accent);
+}
+
+
+/* ---------- 2. Page layout ---------- */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+.page-intro {
+  color: var(--color-muted);
+  margin-top: -8px;
+}
+
+
+/* ---------- 3. Navigation bar ---------- */
+.site-header {
+  background: var(--color-navy);
+}
+
+.nav {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: flex;
+  flex-wrap: wrap;           /* links wrap onto a new line on small phones */
+  align-items: center;
+  gap: 8px 20px;
+}
+
+.nav-logo {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.15rem;
+  text-decoration: none;
+  margin-right: auto;        /* pushes the links to the right */
+}
+
+.nav-logo span {
+  color: var(--color-gold);
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #cfd8e3;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ffffff;
+  border-bottom-color: var(--color-gold);
+}
+
+
+/* ---------- 4. Buttons ---------- */
+.btn {
+  display: inline-block;
+  background: var(--color-accent);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: var(--color-accent-dark);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* A softer, outlined version */
+.btn-secondary {
+  background: transparent;
+  color: var(--color-navy);
+  border: 2px solid var(--color-border);
+}
+
+.btn-secondary:hover {
+  background: var(--color-border);
+}
+
+
+/* ---------- 5. Home page ---------- */
+.hero {
+  background: linear-gradient(135deg, var(--color-navy), var(--color-navy-light));
+  color: #ffffff;
+  border-radius: var(--radius);
+  padding: 40px 24px;
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+  color: #ffffff;
+  margin: 0 0 8px;
+  font-size: 2rem;
+}
+
+.hero p {
+  margin: 0;
+  color: #cfd8e3;
+  max-width: 600px;
+}
+
+/* Grid of feature cards: 1 column on phones, 3 on wide screens */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.feature-card {
+  display: block;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: var(--color-text);
+  transition: transform 0.15s;
+}
+
+.feature-card:hover {
+  transform: translateY(-3px);
+}
+
+.feature-card h2 {
+  margin: 8px 0 4px;
+  font-size: 1.2rem;
+}
+
+.feature-card p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.feature-icon {
+  font-size: 1.8rem;
+}
+
+/* Yellow "practice only" box */
+.disclaimer {
+  background: #fff8e1;
+  border-left: 4px solid var(--color-gold);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-top: 24px;
+  font-size: 0.95rem;
+}
+
+
+/* ---------- 6. Footer ---------- */
+.site-footer {
+  text-align: center;
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  padding: 24px 16px;
+  border-top: 1px solid var(--color-border);
+}
+
+.site-footer p {
+  margin: 4px 0;
+}
