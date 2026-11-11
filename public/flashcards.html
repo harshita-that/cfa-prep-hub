@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcards · CFA Prep Hub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav-logo">CFA Prep <span>Hub</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="flashcards.html" class="active">Flashcards</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="tracker.html">Study Tracker</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Flashcards</h1>
+    <p class="page-intro">Tap the card (or press Enter) to flip it. Use the buttons or ← → arrow keys to move.</p>
+
+    <!-- The card. It's a <button> so it works with the keyboard too. -->
+    <div class="flashcard-area">
+      <button id="flashcard" class="flashcard" aria-label="Flashcard, click to flip">
+        <div class="flashcard-inner">
+          <!-- Front side: the term -->
+          <div class="flashcard-face flashcard-front">
+            <span id="card-topic" class="card-topic"></span>
+            <h2 id="card-term"></h2>
+            <span class="flip-hint">Tap to flip ↻</span>
+          </div>
+          <!-- Back side: the definition -->
+          <div class="flashcard-face flashcard-back">
+            <p id="card-definition"></p>
+          </div>
+        </div>
+      </button>
+    </div>
+
+    <!-- Previous / counter / Next -->
+    <div class="card-controls">
+      <button id="prev-btn" class="btn btn-secondary">← Previous</button>
+      <span id="card-counter" class="card-counter"></span>
+      <button id="next-btn" class="btn">Next →</button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>CFA Prep Hub — a practice project. Not affiliated with or endorsed by CFA Institute.</p>
+    <p>CFA® and Chartered Financial Analyst® are trademarks owned by CFA Institute.</p>
+  </footer>
+
+  <!-- Load the data + logic last, after the HTML exists -->
+  <script src="js/flashcards.js"></script>
+</body>
+</html>
