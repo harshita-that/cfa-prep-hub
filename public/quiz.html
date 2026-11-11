@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz · CFA Prep Hub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav-logo">CFA Prep <span>Hub</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="flashcards.html">Flashcards</a></li>
+        <li><a href="quiz.html" class="active">Quiz</a></li>
+        <li><a href="tracker.html">Study Tracker</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Practice Quiz</h1>
+    <p class="page-intro">Pick an answer to see if you're right. Your score appears at the end.</p>
+
+    <!-- Question area (shown while the quiz is running) -->
+    <section id="quiz-box" class="panel">
+      <div class="quiz-header">
+        <span id="quiz-progress" class="quiz-progress"></span>
+        <span id="question-topic" class="card-topic"></span>
+      </div>
+      <h2 id="question-text" class="question-text"></h2>
+      <div id="options" class="options"></div>
+      <p id="feedback" class="feedback" hidden></p>
+      <button id="next-question-btn" class="btn" hidden>Next question →</button>
+    </section>
+
+    <!-- Result area (shown when the quiz is finished) -->
+    <section id="result-box" class="panel result" hidden>
+      <h2>Your score</h2>
+      <p id="score-text" class="score"></p>
+      <p id="score-message"></p>
+      <button id="restart-btn" class="btn">Try again</button>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>CFA Prep Hub — a practice project. Not affiliated with or endorsed by CFA Institute.</p>
+    <p>CFA® and Chartered Financial Analyst® are trademarks owned by CFA Institute.</p>
+  </footer>
+
+  <!-- Order matters: load the data first, then the logic that uses it -->
+  <script src="js/questions.js"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>
