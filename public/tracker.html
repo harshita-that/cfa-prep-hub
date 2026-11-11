@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Tracker · CFA Prep Hub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav-logo">CFA Prep <span>Hub</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="flashcards.html">Flashcards</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="tracker.html" class="active">Study Tracker</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Study Tracker</h1>
+    <p class="page-intro">Tick a topic when you've finished studying it. Your progress is saved in this browser.</p>
+
+    <!-- Progress bars -->
+    <section class="panel progress-panel">
+      <div class="progress-label">
+        <strong>Topics covered</strong>
+        <span id="progress-text"></span>
+      </div>
+      <div class="progress-track"><div id="progress-bar" class="progress-fill"></div></div>
+
+      <div class="progress-label">
+        <strong>Exam-weighted progress</strong>
+        <span id="weighted-text"></span>
+      </div>
+      <div class="progress-track"><div id="weighted-bar" class="progress-fill progress-fill-gold"></div></div>
+    </section>
+
+    <!-- The checklist (filled in by tracker.js) -->
+    <section class="panel">
+      <ul id="topic-list" class="topic-list"></ul>
+      <p class="weight-note">Weights are CFA Institute's published ranges for 2026 Level 1 exams. They change for 2027 — always check cfainstitute.org.</p>
+      <button id="reset-btn" class="btn btn-secondary">Reset progress</button>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>CFA Prep Hub — a practice project. Not affiliated with or endorsed by CFA Institute.</p>
+    <p>CFA® and Chartered Financial Analyst® are trademarks owned by CFA Institute.</p>
+  </footer>
+
+  <script src="js/tracker.js"></script>
+</body>
+</html>
