@@ -1,14 +1,7 @@
 # TEACHING.md — Lesson plan
 
-> **Who this is for:** the teacher (you). It's a script for teaching someone with **zero technical background** how real software projects are planned and built, using this repo, over a video call.
->
-> **How to use it:** each session has a goal, an analogy, what to **SAY**, what **HE TYPES** (he types, you don't — muscle memory matters), exact commands, timing, and common errors.
->
-> Repo: `https://github.com/harshita-that/cfa-prep-hub`
 
----
-
-## Part 1 — How real projects are built (read this together first, ~15 min)
+## Part 1 — How real projects are built
 
 ### The pipeline
 
@@ -31,9 +24,7 @@ Idea → Requirements → Architecture → Roadmap → Plan → Issues → Branc
 | **Deploy** | Move-in day | Change goes live on the website | Vercel |
 | **Iterate** | Live in it, then renovate | Get feedback, plan the next phase | back to Roadmap |
 
-### SAY
 
-> "Most people start by just building. That's like hiring workers and saying 'build me a house' with no drawings. Each worker guesses. The kitchen ends up where the bathroom should be, and you tear down walls. Professionals spend time *planning* so the building part is fast and boring."
 
 ### Why messy projects fail
 
@@ -43,7 +34,6 @@ Idea → Requirements → Architecture → Roadmap → Plan → Issues → Branc
 4. **No safety net** — without Git, one bad change can wreck everything with no way back.
 5. **Nobody knows what "done" means** — acceptance criteria and definitions of done fix that.
 
----
 
 ## Session 0 — Planning like a pro (~60 min)
 
@@ -71,7 +61,7 @@ Idea → Requirements → Architecture → Roadmap → Plan → Issues → Branc
 
 ---
 
-## Session 1 — Tools: VS Code, Git, GitHub, terminal (~75 min)
+## Session 1 — Tools: VS Code, Git, GitHub, terminal 
 
 **Goal:** Everything installed, repo cloned, site running locally, one tiny edit seen in the browser.
 
@@ -247,13 +237,10 @@ Idea → Requirements → Architecture → Roadmap → Plan → Issues → Branc
 
 ---
 
-## Session 5 — Where it goes next (~45 min, mostly talking)
+## Session 5 — Where it goes next 
 
-**Goal:** He understands, in plain English, what the real platform needs beyond static files, and how it maps to the roadmap.
 
-### SAY (use the architecture doc's future diagram)
 
-> "Right now our site is like a **printed brochure**. Everyone gets the same copy. It can't remember who you are, and anyone can read the answers in the back. A real platform is more like a **shop with staff**."
 
 | Concept | Plain English | Analogy |
 |---|---|---|
@@ -276,8 +263,7 @@ Idea → Requirements → Architecture → Roadmap → Plan → Issues → Branc
 - Secrets (database keys) go in **Vercel → Project → Settings → Environment Variables**.
 - Vercel has a marketplace to connect databases (e.g. Supabase, Postgres) to the project.
 
-### Exercise
-He and his friend take Issue *Draft the Phase 3 breakdown* and turn Phase 3 into 8–15 task-sized issues. That's the planning loop starting again — **Iterate**.
+
 
 ---
 
